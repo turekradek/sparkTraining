@@ -1,0 +1,9 @@
+.create table wyniki (
+    id_kierowcy: string,
+    punkty: int,
+    id_wyscigu: string
+)
+
+.ingest into table wyniki './Wyniki.txt' with (ignoreFirstRecord = true)
+
+wyniki

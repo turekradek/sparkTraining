@@ -9,3 +9,41 @@ java --version
 python3 a.py
 echo $JAVA_HOME
 export JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
+
+.create table sales (
+     SalesOrderNumber: string,
+     SalesOrderLineItem: int,
+     OrderDate: datetime,
+     CustomerName: string,
+     EmailAddress: string,
+     Item: string,
+     Quantity: int,
+     UnitPrice: real,
+     TaxAmount: real)
+
+
+.ingest into table sales 'https://<StorageAccountName>.blob.core.windows.net/container/<TableName>.csv' 
+ with (ignoreFirstRecord = true)
+
+
+ sales
+
+ sales
+| take 5
+
+sales
+| take 5
+
+
+sales
+| where OrderDate between (now(-1d) .. now())
+
+sales
+| where Item contains 'Mountain-100'
+| sort by OrderDate desc
+
+sales
+| summarize ItemsSold= sum(Quantity) by Item
+
+
+
