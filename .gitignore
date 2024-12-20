@@ -1,0 +1,9 @@
+.venv
+resorces/*
+*.zip
+*.pdf
+2020.csv
+2021.csv
+datafabrictraining/*
+R/*
+DATA/*
