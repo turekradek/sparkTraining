@@ -1,4 +1,5 @@
 .venv
+.vscode
 resorces/*
 *.zip
 *.pdf
@@ -7,3 +8,7 @@ resorces/*
 datafabrictraining/*
 R/*
 DATA/*
+# FILES
+*.csv
+*.xlsx
+*.parquet
