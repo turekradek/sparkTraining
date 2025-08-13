@@ -12,3 +12,9 @@ DATA/*
 *.csv
 *.xlsx
 *.parquet
+
+# Folders
+*.tar.gz
+*.gz
+*.tar
+extracted_data/
