@@ -18,3 +18,4 @@ DATA/*
 *.gz
 *.tar
 extracted_data/
+parquet_files/
