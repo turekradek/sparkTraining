@@ -1,21 +1,13 @@
-.venv
+# VSCODE setup
 .vscode
-resorces/*
-*.zip
-*.pdf
-2020.csv
-2021.csv
-datafabrictraining/*
-R/*
-DATA/*
-# FILES
-*.csv
-*.xlsx
-*.parquet
 
-# Folders
-*.tar.gz
-*.gz
-*.tar
-extracted_data/
-parquet_files/
+# Python
+.venv
+
+# DATA
+resorces/*
+data/unpackaged/*
+data/parquet_files/*
+data/packaged/*
+*.tgz
+*.pdf
